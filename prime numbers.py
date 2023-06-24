@@ -23,11 +23,9 @@
 # statements. It is also an example of an algorithm used in number theory. Let me know when you're ready for the
 # eighth project! do this
 user = int(input("enter a positive number greater than 1"))
+if user % 2 == 0:
+    print("is not prime")
+else:
+    print("its prime")
 
-for num in range(2, user + 1):
-    for i in range (2, num):
-        if (num % i) == 0:
-            break
-    else:
-        print(num)
 
